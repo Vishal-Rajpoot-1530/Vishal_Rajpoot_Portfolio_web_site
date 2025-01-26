@@ -32,7 +32,7 @@ const Projects = () => {
             <p>
               URL:{" "}
               <a
-                href="https://elegant-sunflower-69028d.netlify.app"
+                href="https://delicate-cobbler-8e393a.netlify.app"
                 target="_blank"
               >
                 https://elegant-sunflower-69028d.netlify.app
