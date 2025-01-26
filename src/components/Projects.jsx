@@ -93,7 +93,14 @@ const Projects = () => {
             <li>
               <b>Currency-Convertor </b>
             </li>
-            <p></p>
+            <p>
+              <a
+                href="https://github.com/Vishal-Rajpoot-1530/currency_convertor"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </p>
           </ul>
         </div>
         <div>
