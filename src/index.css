@@ -30,6 +30,12 @@
   color: aqua;
 }
 
+/* @media (max-width: 990px) {
+  .app {
+    padding-top: 300px;
+  }
+} */
+
 .app {
   padding-top: 200px;
   display: flex;
