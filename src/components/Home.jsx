@@ -13,7 +13,6 @@ const Home = () => {
           skills with “Node.js”, “Express.js”, and “MongoDB”, to contribute
           effectively to the next phase of web development projects.
         </p>
-        
       </div>
     </>
   );
