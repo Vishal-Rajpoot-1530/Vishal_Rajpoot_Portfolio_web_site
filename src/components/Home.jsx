@@ -13,15 +13,7 @@ const Home = () => {
           skills with “Node.js”, “Express.js”, and “MongoDB”, to contribute
           effectively to the next phase of web development projects.
         </p>
-        <img src="profile_image.jpg" alt="Profile Iamge" />
-
-        <img src="img3.jpg" alt="Profile Iamge" />
-        <img src="img4.jpg" alt="Profile Iamge" />
-        <img src="img5.jpg" alt="Profile Iamge" />
-         <img src="img8.jpg" alt="Profile Iamge" />
-        <img src="img7(1).jpg" alt="Profile Iamge" />
-        <img src="img7(2).jpg" alt="Profile Iamge" />
-       
+        
       </div>
     </>
   );
