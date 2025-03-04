@@ -1,4 +1,14 @@
+import { useState } from "react";
 const Projects = () => {
+  const [iframeSrc1, setIframeSrc1] = useState("");
+  const [iframeSrc2, setIframeSrc2] = useState("");
+
+  const changeIframeSrc1 = (url) => {
+    setIframeSrc1(url);
+  };
+  const changeIframeSrc2 = (url) => {
+    setIframeSrc2(url);
+  };
   return (
     <>
       <div className="projects">
@@ -24,6 +34,44 @@ const Projects = () => {
               >
                 https://chic-beijinho-2d09e9.netlify.app/
               </a>
+              <button
+                onClick={() =>
+                  changeIframeSrc1("https://chic-beijinho-2d09e9.netlify.app/")
+                }
+              >
+                View Page
+              </button>
+              {iframeSrc1 && (
+                <div style={{ position: "relative", display: "inline-block",zIndex:"0" }}>
+                  <button
+                    className="close"
+                    onClick={() => changeIframeSrc1("")}
+                    style={{
+                      position: "absolute",
+                      // top: "1px",
+                      right: "5px",
+                      background: "red",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "50%",
+                      width: "25px",
+                      height: "25px",
+                      cursor: "pointer",
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    X
+                  </button>
+                  <iframe
+                    src={iframeSrc1}
+                    width="350"
+                    height="500"
+                    style={{ border: "1px solid black", marginTop: "10px" }}
+                    title="Dynamic Iframe"
+                  ></iframe>
+                </div>
+              )}
             </p>
 
             <li>
@@ -37,6 +85,46 @@ const Projects = () => {
               >
                 https://delicate-cobbler-8e393a.netlify.app
               </a>{" "}
+              <button
+                onClick={() =>
+                  changeIframeSrc2(
+                    "https://delicate-cobbler-8e393a.netlify.app"
+                  )
+                }
+              >
+                View Page
+              </button>
+              {iframeSrc2 && (
+                <div style={{ position: "relative", display: "inline-block", zIndex:"0" }}>
+                  <button
+                    className="close"
+                    onClick={() => changeIframeSrc2("")}
+                    style={{
+                      position: "absolute",
+                      // top: "5px",
+                      right: "5px",
+                      background: "red",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "50%",
+                      width: "25px",
+                      height: "25px",
+                      cursor: "pointer",
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    X
+                  </button>
+                  <iframe
+                    src={iframeSrc2}
+                    width="350"
+                    height="500"
+                    style={{ border: "1px solid black", marginTop: "10px" }}
+                    title="Dynamic Iframe"
+                  ></iframe>{" "}
+                </div>
+              )}
             </p>
           </ul>
         </div>
